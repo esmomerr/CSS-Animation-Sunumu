@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-TRANSFORMS</title>
+    <style>
+        body {
+            background-color: #333;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        .box {
+            background-color: yellow;
+            color: red;
+            font-size: x-large;
+            font-weight: bold;
+            width: 260px;
+            height: 220px;
+            text-align: center;
+            transition: all 1s ease-in-out;
+        }
+
+        code{
+            color: black;
+            text-align: left;
+        }
+
+        .box1:hover{
+           transform: skew(-30deg, 30deg);
+        }
+
+        .box2:hover{
+            transform: scale(2);
+            /* transform: scale(0.5); */
+        }
+
+        .box3:hover{
+            transform: translateX(-100px);
+        }
+
+        .box4:hover{
+            transform: translateY(-100px);
+        }
+
+        .box5:hover{
+            transform: translate(100px,100px);
+        }
+
+        .box6:hover{
+            transform: rotate(180deg);
+        }
+
+        .box7:hover{
+            transform: rotateX(180deg);
+        }
+
+        .box8:hover{
+            transform: rotateY(180deg);
+        }
+        .box9:hover{
+            transform: rotateZ(180deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box box1">
+        <span>
+            SKEW <br>
+            <code>
+                .box1:hover{
+                    transform: skew(-30deg, 30deg);
+                 }
+            </code>
+        </span>
+    </div>
+
+    <div class="box box2">
+        <span>
+            SCALE <br>
+            <code>
+                .box2:hover{
+                    transform: scale(2); <br>
+                    /* transform: scale(0.5); */
+                }
+            </code>
+        </span>
+    </div>
+
+    <div class="box box3">
+        <span>
+            TRANSLATEx <br>
+            <code>
+                .box3:hover{
+                    transform: translateX(-100px);
+                }
+            </code>
+        </span>
+    </div>
+
+    <div class="box box4">
+        <span>
+            TRANSLATEy <br>
+            <code>
+                .box4:hover{
+                    transform: translateY(-100px);
+                }
+            </code>
+        </span>
+    </div>
+
+    <div class="box box5">
+        <span>
+            TRANSLATE <br>
+            <code>
+                .box5:hover{
+                    transform: translate(100px,100px);
+                }
+            </code>
+        </span>
+    </div>
+
+    <div class="box box6">
+        <span>
+            ROTATE <br>
+            <code>
+                .box6:hover{
+                    transform: rotate(180deg);
+                }
+            </code>
+        </span>
+    </div>
+
+    <div class="box box7">
+        <span>
+            ROTATEx <br>
+            <code>
+                .box7:hover{
+                    transform: rotateX(180deg);
+                }
+            </code>
+        </span>
+    </div>
+
+    <div class="box box8">
+        <span>
+            ROTATEy <br>
+            <code>
+                .box8:hover{
+                    transform: rotateY(180deg);
+                }
+            </code>
+        </span>
+    </div>
+
+    <div class="box box9">
+        <span>
+            ROTATEz <br>
+            <code>
+                .box9:hover{
+                    transform: rotateZ(180deg);
+                }
+            </code>
+        </span>
+    </div>
+
+
+</body>
+</html>
